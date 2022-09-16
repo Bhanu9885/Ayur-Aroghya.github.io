@@ -1,0 +1,25 @@
+<body>
+    <div class="center">
+     <div class="form">
+     <form  #loginform="ngForm" novalidate (ngSubmit)="onSubmit()">
+     <div>
+         <h2 style="color: #2D31FA;">Employee Registration Form</h2>
+         <div class="table">
+         <table> 
+             <tr><td><label for="text" style="margin: 10px;">First Name:</label></td><td><input type="text" name="fname" [(ngModel)]="user.fname" class="text" placeholder="Enter First Name"></td></tr><br>
+             <tr><td><label for="text" style="margin: 10px;">Last Name</label></td><td><input type="text" name="lname" [(ngModel)]="user.lname" class="text" placeholder="Enter password"> <span id="error"></span></td>
+             <tr><td><label for="text" style="margin: 10px;">Email</label></td><td><input type="text" name="email" [(ngModel)]="user.email" class="text" placeholder="Enter Email"></td></tr><br>
+             <tr><td><label for="text" style="margin: 10px;">Password</label></td><td><input type="password" name="password" [(ngModel)]="user.password" class="text" placeholder="Enter password"> <span id="error"></span></td>
+             <tr><td><label for="text" style="margin: 10px;">Contact</label></td><td><input type="text" name="contact" [(ngModel)]="user.contact" class="text" placeholder="Enter Mobile Number"></td></tr><br>
+             <tr><td><label for="text" style="margin: 10px;">Address</label></td><td><input type="text" name="address" [(ngModel)]="user.address" class="text" placeholder="Enter Your Address"></td></tr><br>
+             <tr><td><label for="text" style="margin: 10px;">Usertype</label></td><td><input type="text" name="usertype" [(ngModel)]="user.usertype" class="text" placeholder="Usertype"></td></tr><br>
+          </table>
+         </div>
+      <button class="btn btn-primary" type="submit" style="margin-left:80px;width: 180px; height: 70px;margin-right:20px;">Add/Update Employee </button>
+      <button class="btn btn-danger" type="button" (click)="show1()" style="margin-left:80px;width: 180px; height: 70px; font-size:15px;" data-dismiss="modal">cancel</button>
+     </div>
+    </form>
+ </div>
+ </div>
+ </body>
+ 

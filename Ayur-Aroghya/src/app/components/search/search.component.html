@@ -1,0 +1,93 @@
+<script>
+   function Register(){
+       alert("You have been 'Registered Successfully'");
+   }
+   function testPassword(){
+       var result;
+   var a= document.getElementById("pass").value;
+   if(a.length<8){
+      result= document.getElementById("error").innerHTML="Please password more than 8 Charecters";
+   }
+    else if((a.match(/[A-Z]/g))&&(a.match(/[a-z]/g))&&(a.match(/[0-9]/g))){
+           if((a.length>=8)&&(a.length<=10)){
+               return "weak Password";
+           }
+           if((a.length>=11)&&(a.length<=13)){
+               return "Strong Password";
+           }
+       }
+   return result;
+   }
+</script>
+
+<nav class="navbar navbar-inverse ">
+      
+   <div class="navbar-header" >
+       <img style="width: 150px; height: 90px;justify-content: center; " class="navbar-nav navbar-left"   src="./assets/images/logo.png" alt="Logo">
+   </div>
+   <div class="navbar-header" style="margin: 15px;padding: 15px ; display: flex;">
+      <a class="navbar-header" href="">Home</a>
+      <a class="navbar-header" href="">About Us</a>
+      <a class="navbar-header" href="">Contact Us</a>
+   </div>  
+   <input class="navbar-header" style=" margin: 25px; padding: 10px;width: 350px; height: 45px; " type="text" name="searchName">
+   <button class="btn btn-success" style=" margin: 25px; padding: 10px; font-size:20px; height: 45px; width: 90px; " >Search</button>
+
+    <div style="margin: 15px; float: right; ">
+        <button class="btn btn-primary" type="button" class="btn btn-info" data-toggle="modal" data-target="#login"
+        style="margin: 5px; height: 50px; width: 120px;font-size: 20px; align-items: center; justify-content: center;">LogIn</button>
+        <div class="modal" id="login" role="dialog">
+           <div class="modal-dialog">
+              <div class="modal-content">
+                   <div class="modal-header">
+                      <h2>LogIn</h2>
+                   </div>
+                   <div class="modal-body">
+                      <div class="form">
+                          <p>Enter Your details:</p>
+                          <table>
+                          <tr><td><label for="text" style="margin: 10px;">Email</label></td><td><input type="text" name="email" [(ngModel)]="user1.email" class="text" placeholder="Enter Email"></td></tr><br>
+                           <tr><td><label for="text" style="margin: 10px;">Password</label></td><td><input type="password" name="pwd" [(ngModel)]="user1.password" id="pass" class="text" placeholder="Enter password"> <span id="error"></span></td>
+                              <tr><td><label for="text" style="margin: 10px;">UserType</label></td><td><input type="text" name="u_type" [(ngModel)]="user1.usertype" class="text" placeholder="Admin/User"></td></tr><br>
+                           </table>
+                      </div>
+                   </div>
+                   <div class="modal-footer" >
+                      <button class="btn btn-primary" type="button" (click)="show1()" [(ngModel)]="user1.usertype" style="width: 125px; height: 40px;margin-right:20px;">Sign In </button>
+                      <button class="btn btn-danger" type="button" style="width: 125px; height: 40px;" data-dismiss="modal">cancel</button>
+                   </div>
+              </div>
+          </div>
+        </div>
+
+     <button class="btn btn-primary" id="regid" type="button" class="btn btn-info" data-toggle="modal" data-target="#register"
+      style="margin: 5px;height: 50px; width: 120px; font-size:20px; align-items: center; justify-content: center;">Register</button>
+      <div class="modal" id="register" role="dialog">
+         <div class="modal-dialog">
+             <div class="modal-content">
+                  <div class="modal-header">
+                     <h2>Register</h2>
+                  </div>                    
+                  <div class="modal-body">
+                        <div class="form">
+                          <table> 
+                           <tr><td><label for="text" style="margin: 10px;">First Name:</label></td><td><input type="text" name="fname" [(ngModel)]="user2.fname" class="text" placeholder="Enter First Name"></td></tr><br>
+                           <tr><td><label for="text" style="margin: 10px;">Last Name</label></td><td><input type="text" name="lname" [(ngModel)]="user2.lname" class="text" placeholder="Enter password"> <span id="error"></span></td>
+                           <tr><td><label for="text" style="margin: 10px;">Email</label></td><td><input type="text" name="email" [(ngModel)]="user2.email" class="text" placeholder="Enter Email"></td></tr><br>
+                           <tr><td><label for="text" style="margin: 10px;">Password</label></td><td><input type="password" name="password" [(ngModel)]="user2.password" class="text" placeholder="Enter password"> <span id="error"></span></td>
+                           <tr><td><label for="text" style="margin: 10px;">Contact</label></td><td><input type="text" name="contact" [(ngModel)]="user2.contact" class="text" placeholder="Enter Mobile Number"></td></tr><br>
+                           <tr><td><label for="text" style="margin: 10px;">Address</label></td><td><input type="text" name="address" [(ngModel)]="user2.address" class="text" placeholder="Enter Your Address"></td></tr><br>
+                        </table>
+                           <p style="margin: 10px;">To create an account you have to agree our <a href="" >Terms & Privacy</a></p><br>
+                        </div>
+                  </div>
+                  <div class="modal-footer" >
+                     <button class="btn btn-primary" onclick="testPassword()" type="submit" style="width: 125px; height: 40px;margin-right:20px;">Register </button>
+                     <button class="btn btn-danger" type="button" style="width: 125px; height: 40px;" data-dismiss="modal">cancel</button>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+
+

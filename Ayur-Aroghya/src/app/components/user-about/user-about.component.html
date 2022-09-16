@@ -1,0 +1,106 @@
+<body>
+    <nav class="navbar">
+        <div style="display: flex;">
+            <div class="navbar-header">
+                <img style="width: 150px; height: 90px;justify-content: center; " class="navbar-nav navbar-left"
+                    src="./assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="navbar-header" style="cursor: pointer; margin: 15px;padding: 15px ; display: flex;">
+                <a class="navbar-header" (click)="show1()">Home</a>
+                <a class="navbar-header" (click)="show2()">About Us</a>
+                <a class="navbar-header" (click)="show3()">Contact Us</a>
+            </div>
+            <div>
+                <form class="form-header" #searchform="ngForm" (submit)="search()" method="GET">
+                    <input class="navbar-header" style=" margin: 20px;padding: 15px ;width: 350px; height: 50px; "
+                        type="text" name="search" placeholder="Search for Products ..." [(ngModel)]="searchName" />
+                    <button class="btn btn-success"
+                        style=" margin: 20px; height: 50px; width: 120px;font-size: 20px; align-items: center; justify-content: center;"
+                        type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+            <div style="margin-left: 125px;">
+                <button class="btn btn-primary" (click)="show4()" class="btn btn-info"
+                    style="margin: 20px; height: 50px; width: 120px;font-size: 20px; align-items: center; ">View Cart</button>
+    
+                <button class="btn btn-primary" id="regid" (click)="show5()" class="btn btn-info"
+                    style="margin: 20px;height: 50px; width: 120px; font-size:20px; align-items: center; ">Logout</button>
+            </div>
+       
+       </div>
+    </nav>
+    <main id="maincontent" class="main-section static-content">
+        <div class="content-section">
+            <div class="row">
+                <div class="staticcontent about-us">
+                    <div class="stat-bnr">
+                        <img style="width: 100%;" title=""
+                            src="https://www.netmeds.com/images/cms/offers/1660147767_about.jpg" alt="">
+                    </div>
+                    <div class="clear2"></div>
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <h3>ABOUT US</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3 left text-right">
+                            <h3 class="text-right">The Trusted<br>Online<br>Medicine<br>Partner</h3>
+                            <div class="clearfix"></div>
+                            <h4>For More Than<br>Seven Million<br><span> Loyal Customers</span></h4>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-sm-6 center">
+                            <span class="abt-txt"> Who we are - India's most convenient online pharmacy </span>
+                            <p class="abt-cont">Netmeds.com is one of India’s most trusted pharmacies, dispensing quality
+                                medicines at reasonable prices to over 7 million happy customers – PAN India. At
+                                netmeds.com, we help you look after your own health effortlessly as well as take care of
+                                loved ones wherever they may reside in India. You can buy and send medicines from any corner
+                                of the country - with just a few clicks of the mouse.</p> <span class="abt-txt"> What we do
+                                – Offer fast online access to medicines with convenient home delivery </span>
+                            <p class="abt-cont">At netmeds.com, we make a wide range of prescription medicines and other
+                                health products conveniently available all across India. Even second and third tier cities
+                                and rural villages can now have access to the latest medicines. Since we also offer generic
+                                alternatives to most medicines, online buyers can expect significant savings.</p>
+                            <div class="about-col">
+                                <div class="abt-images"><img
+                                        src="https://www.netmeds.com/images/cms/wysiwyg/icons/convenience.png" alt=""></div>
+                                <h1>CONVENIENCE</h1>
+                                <p>Heavy traffic, lack of parking, monsoons, shop closed, forgetfulness… these are some of
+                                    the reasons that could lead to skipping of vital medications. Since taking medicines
+                                    regularly is a critical component of managing chronic medical conditions, it’s best not
+                                    to run out of essential medicines. Just log on to netmeds.com, place your order online
+                                    and have your medicines delivered to you – without leaving the comfort of your home.</p>
+                                <p>What’s more, with easy access to reliable drug information, you get to know all about
+                                    your medicine at netmeds.com, and once you’re a Netmeds customer, you’ll get regular
+                                    refill reminders, so you’ll never again come up short of medicines.</p>
+                            </div>
+                            <div class="about-col">
+                                <div class="abt-images"><img
+                                        src="https://www.netmeds.com/images/cms/wysiwyg/icons/one-stop-shop.png" alt="">
+                                </div>
+                                <h1>ONE-STOP SHOP</h1>
+                                <p>At netmeds.com, we not only provide you with&nbsp;a wide range of medicines listed under
+                                    various categories, we also offer a wide choice of OTC products including&nbsp;wellness
+                                    products, vitamins, diet/fitness supplements, herbal products,&nbsp;pain relievers,
+                                    diabetic care kits, baby/mother care products, beauty care products and surgical
+                                    supplies.</p>
+                            </div>
+                            <div class="about-col">
+                                <div class="abt-images"><img
+                                        src="https://www.netmeds.com/images/cms/wysiwyg/icons/trust.png" alt=""></div>
+                                <h1>TRUST</h1>
+                                <p>With the highest standards of ethical pharmacy practice, Netmeds is committed to
+                                    providing authentic cum affordable medicines as well as a customer service philosophy
+                                    that is worthy of our valued customers’ loyalty. We offer a superior online shopping
+                                    experience, which includes ease of navigation and absolute transactional security.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    </body>

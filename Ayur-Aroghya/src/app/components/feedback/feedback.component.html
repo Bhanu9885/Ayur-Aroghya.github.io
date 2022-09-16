@@ -1,0 +1,42 @@
+<body>
+    <div class="navbar">
+        <img style="width: 150px; height: 90px;justify-content: center; " 
+            src="./assets/images/logo.png" alt="Logo">
+    
+        <h2  style="margin:30px; margin-left: 480px; ">Welcome Admin</h2>
+    
+        <button class="regid"  (click)="show1()" class="btn btn-info"
+            style="margin:20px; margin-left: 480px; height: 50px; width: 120px;font-size: 20px;  ">Logout</button>
+    
+    </div>
+    <div style="margin-left: 700px;">
+        <button type="button" class="btn btn-info" style="text-align:center; margin: 10px;border-radius:15px;font-size:20px;" (click)="show2()"> 
+            Back </button>
+        </div> 
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+              <table class='table table-bordered'>
+                <thead>
+                    <tr class='table-dark'>
+                        <th>FirstName</th>
+                        <th>LastName</th>
+                        <th>Email</th>
+                        <th>Contact</th>
+                        <th>Message</th>
+                    </tr>
+                </thead>
+              <tbody>
+                <tr  *ngFor="let contact of contacts">
+                    <td>{{contact.fname}}</td>
+                    <td>{{contact.lname}}</td>
+                    <td>{{contact.email}}</td>
+                    <td>{{contact.contact}}</td>
+                    <td>{{contact.message}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>

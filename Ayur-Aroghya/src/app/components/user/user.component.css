@@ -1,0 +1,30 @@
+body{
+   
+    justify-content: center;
+    background-color: #C4D7E0;
+     background-repeat: no-repeat;
+     background-size: 100vw;
+     position: relative;
+}
+
+.navbar{
+    display: flex;
+    background-color: #CDF0EA;
+}
+
+table{
+border-color: green;
+}
+
+tr th{
+    text-align: center;
+    border-color: green;
+   
+}
+
+tr td{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-color: green;
+}

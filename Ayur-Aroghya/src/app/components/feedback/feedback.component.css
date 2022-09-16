@@ -1,0 +1,44 @@
+
+body{
+    height: 100vh;
+    justify-content: center;
+    background-color: #C4D7E0;
+     background-repeat: no-repeat;
+     background-size: 100vw;
+     position: relative;
+}
+
+.navbar{
+    display: flex;
+    background-color: #CDF0EA;
+}
+
+.regid{
+    float: left;
+}
+.action{
+    padding: 15px;
+    display: block;
+    border: 10px solid #ED50F1;
+    font-size: 18px;
+    border-radius: 35px;
+    align-items:center;
+    justify-content: center;
+    text-align: center; 
+}
+table{
+    border-color: green;
+    }
+    
+    tr th{
+        text-align: center;
+        border-color: green;
+       
+    }
+    
+    tr td{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        border-color: green;
+    }

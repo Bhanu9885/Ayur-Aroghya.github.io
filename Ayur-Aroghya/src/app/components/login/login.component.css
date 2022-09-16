@@ -1,0 +1,23 @@
+body{
+    height: 100vh;
+    justify-content: center;
+     background-image: URL("./assets/images/background.jpeg");
+     background-repeat: no-repeat;
+     background-size: 100vw;
+     position: relative;
+}
+
+.center{
+    padding: 15% 35% 15% 35%;
+}
+
+.form{
+    padding: 15px;
+    display: block;
+    border: 10px solid #ED50F1;
+    font-size: 18px;
+    border-radius: 35px;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}

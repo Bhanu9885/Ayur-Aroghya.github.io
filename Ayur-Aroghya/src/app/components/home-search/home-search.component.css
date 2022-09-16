@@ -1,0 +1,61 @@
+.card{
+    margin: 0px;
+ }
+body{
+    background-color: #C4D7E0;
+}
+
+.navbar{
+    background-color: #CDF0EA;
+}
+.navbar-header{
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a{
+    padding-right:25px;
+    text-align: center;
+    justify-content: center;
+}
+.regid{
+    display: flex;
+    float: right;
+}
+
+.card{
+    display: flex;
+}
+.product{
+    margin: 15px;
+    border: 1px solid;
+    width: 480px;
+    height: 190px;
+    border-radius: 20px;
+    display: flex;
+    background-color: aquamarine;
+}
+.card img{
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 20px;
+    width:150px;
+    height: 170px;
+}
+
+.card-body{
+    margin: 10px; 
+}
+
+button{
+    margin: 10px;
+    padding: 0px 20px ;
+    text-align: center;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}

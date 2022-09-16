@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    justify-content: center;
+     background-image: URL("./assets/images/background.jpeg");
+     background-repeat: no-repeat;
+     background-size: 100vw;
+     position: relative;
+}
+
+.center{
+    padding: 4% 20% 4% 20%;
+}
+
+.table{
+    margin-left: 180px;
+    display: flex;
+  text-align: justify;
+}
+
+table input{
+    margin-left: 180px;
+    width: 300px;
+}
+.form{
+    padding: 15px;
+    display: block;
+    border: 10px solid #ED50F1;
+    font-size: 18px;
+    border-radius: 35px;
+    text-align: center;
+}

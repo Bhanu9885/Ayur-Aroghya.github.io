@@ -1,0 +1,25 @@
+body{
+    background-color: #C4D7E0;
+}
+main{
+    background-color: #C4D7E0;
+}
+
+.navbar{
+    background-color: #CDF0EA;
+}
+.navbar-header{
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+}
+a{
+    padding-right:25px;
+    text-align: center;
+    justify-content: center;
+}
+.regid{
+    display: flex;
+    float: right;
+}

@@ -1,0 +1,19 @@
+<body>
+  <div class="center">
+     
+  <div class="form">
+     <marquee> Please send your valuable feedback <br></marquee>
+      <p style="color: #2D31FA;">Enter Login details:</p>
+      <table >
+        <tr><td><label for="text" style="margin: 10px;">First Name</label></td><td><input type="text" style="margin-left: 60px;" name="fname" [(ngModel)]="contact.fname" class="text" placeholder="Enter Full Name"></td></tr>
+        <tr><td><label for="text" style="margin: 10px;">Last Name</label></td><td><input type="text" style="margin-left: 60px;" name="lname" [(ngModel)]="contact.lname" class="text" placeholder="Enter Last Name"></td></tr>
+      <tr><td><label for="text" style="margin: 10px;">Email</label></td><td><input type="text" style="margin-left: 60px;" name="email" [(ngModel)]="contact.email" class="text" placeholder="Enter your Email"></td></tr>
+       <tr><td><label for="text" style="margin: 10px;">Contact</label></td><td><input type="password"style="margin-left: 60px;" name="contact" [(ngModel)]="contact.contact" id="pass" class="text" placeholder="Enter your Phone Number"> <span id="error"></span></td>
+          <tr><td><label for="text" style="margin: 10px;">Message</label></td><td><input type="text" style="margin-left: 60px;" name="message" [(ngModel)]="contact.message" class="text" placeholder="Enter your Message"></td></tr><br>
+         
+        </table>
+  <button class="btn btn-primary" type="button" (click)="show1()"  style="font-size: 18px;width: 125px; height: 40px;margin-right:20px;">Submit </button>
+  <button class="btn btn-danger" type="button" (click)="show2()"style="font-size: 18px;width: 125px; height: 40px;" >cancel</button>
+  </div>
+  </div>
+  </body>

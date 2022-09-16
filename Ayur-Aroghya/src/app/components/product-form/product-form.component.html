@@ -1,0 +1,63 @@
+<body>
+    <div class="center">
+        <div class="form">
+         <form #loginform="ngForm" novalidate (ngSubmit)="onSubmit()">
+                <div>
+                    <h2 style="color: #2D31FA;">Add Product</h2>
+                    <div class="table">
+                     <table>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Name:</label></td>
+                                <td><input type="text" name="name" [(ngModel)]="product.name" class="text"
+                                        placeholder="Enter Product Name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Image Path</label></td>
+                                <td><input type="text" name="image" [(ngModel)]="product.image" class="text"
+                                        placeholder="Enter Image path"></td>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Drug</label></td>
+                                <td><input type="text" name="drug" [(ngModel)]="product.drug" class="text"
+                                        placeholder="Enter Drug Name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Manufacturer</label></td>
+                                <td><input type="text" name="Manufacturer" [(ngModel)]="product.mfg" class="text"
+                                        placeholder="Enter Manufacturer Name"> </td>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Manufacture-Date</label></td>
+                                <td><input type="text" name="Manufacture-Date" [(ngModel)]="product.mfgdate" class="text"
+                                        placeholder="Enter Manufacture-Date"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Use-Before</label></td>
+                                <td><input type="text" name="UseBefore" [(ngModel)]="product.usebefore" class="text"
+                                        placeholder="Enter Use-Before Date"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">M.R.P</label></td>
+                                <td><input type="text" name="mrp" [(ngModel)]="product.mrp" class="text"
+                                        placeholder="Enter M.R.P"> </td>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Discount</label></td>
+                                <td><input type="text" name="Discount" [(ngModel)]="product.discount" class="text"
+                                        placeholder="Enter Discount"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="text" style="margin: 10px;">Category Id</label></td>
+                                <td><input type="text" name="category" [(ngModel)]="product.catId" class="text"
+                                        placeholder="Enter Category Type ID"></td>
+                            </tr><br>
+
+
+                        </table>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="submit"
+                    style="width: 180px; height: 70px; font-size:15px;margin-right:20px;">Add/Update<br> Product </button>
+                <button class="btn btn-danger" type="button" (click)="show1()" style="margin-left:80px;width: 180px; height: 70px; font-size:15px;"
+                    data-dismiss="modal">cancel</button>
+            </form>
+        </div>
+    </div>
+</body>

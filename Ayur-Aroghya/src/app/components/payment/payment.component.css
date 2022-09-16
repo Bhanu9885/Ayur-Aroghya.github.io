@@ -1,0 +1,62 @@
+
+body{
+    margin: 0px;
+    background-image: url("https://img.freepik.com/free-vector/winter-background-with-pastel-color-brushes-leaves_220290-42.jpg");
+    background-repeat: no-repeat;
+    background-size: 250vw;
+  
+    position: relative;
+   
+}
+.table{
+    margin-left: 150px;
+    display: flex;
+  text-align: justify;
+}
+
+table input{
+    margin: 10px;
+    margin-left: 180px;
+    padding: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+hr.new{
+    margin: 0px;
+    border: 5px solid ;
+    border-radius: 15px;
+}
+
+.form{
+    padding: 15px;
+    display: block;
+    border: 10px solid #ED50F1;
+    font-size: 18px;
+    border-radius: 35px;
+    text-align: center;
+}
+#upi{
+    margin: 0px;
+   padding: 0%;
+}
+#upi tr th input{
+    padding: 20px;
+    margin: 0px;
+}
+#upi tr th label{
+    margin: 0px;
+   padding: 0px;
+}
+#upi tr td input{
+    padding: 20px;
+    margin: 10px 0px 10px 90px;
+}
+#upi tr td label{
+    text-align: center;
+    align-items: center;
+    margin: 0px;
+   padding: 0px;
+  
+}

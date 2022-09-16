@@ -1,0 +1,46 @@
+
+<div class="list">
+  <ng-container  *ngFor="let product of products">
+<div class="card">
+  
+  <table style="display:flex;" >
+    <tr>
+  <div class="product">
+    <img src={{product.image}} class="card-img-left" alt="Product Image"/>
+    <div class="card-body">
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>:  {{product.name}}</td>
+        </tr>
+        <tr>
+          <th>Manufacturer</th>
+          <td>:  {{product.mfg}}</td>
+        </tr>
+        <tr>
+          <th>Date-of-Production</th>
+          <td>:  {{product.mfgdate}}</td>
+        </tr>
+        <tr>
+          <th>Use-Before</th>
+          <td>:  {{product.usebefore}}</td>
+        </tr>
+        <tr>
+          <th>Price</th>
+          <td>:  {{product.mrp}}</td>
+        </tr>
+        <tr>
+          <th>Discount</th>
+          <td>:  {{product.discount}}%</td>
+        </tr>
+      </table>
+      <button class="btn btn-primary" type="button" (click)="show1()" style="font-size: 18px;width: 200px; height: 30px;margin-right:20px;">Add to Cart</button>
+    </div>
+  </div>
+</tr>
+</table>
+</div>
+</ng-container>
+</div>
+
+

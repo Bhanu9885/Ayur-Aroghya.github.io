@@ -1,0 +1,17 @@
+.category{
+    display:flex;
+    margin: 20px;
+    justify-content: center;
+}
+
+button{
+    margin-left: 15px;
+    width: 150px;
+    height:180px
+}
+
+button img{
+    margin: 5px;
+    width:80px;
+    height:80px;
+}
